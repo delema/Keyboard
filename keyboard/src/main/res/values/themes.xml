@@ -1,0 +1,6 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="OrthosKeyboard" parent="@android:style/Widget.KeyboardView">
+        <item name="alternativesViewStyle">@style/AlternativesView</item>
+        <item name="keyboardViewStyle">@style/KeyboardView</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="KeyboardView" parent="OrthosKeyboard">
+    </style>
+    <style name="AlternativesView" parent="KeyboardView">
+        <item name="android:keyTextSize">22sp</item>
+    </style>
+    <style name="CandidatesView">
+        <item name="android:padding">@dimen/config_candidates_padding</item>
+        <item name="android:background">@drawable/selection</item>
+    </style>
+</resources>
