@@ -90,6 +90,7 @@ public class CandidatesView extends View {
 		mPaint.setAntiAlias(true);
 		mPaint.setTextSize(resources.getDimensionPixelSize(R.dimen.candidate_font_height));
 		mPaint.setStrokeWidth(0);
+		mPaint.setFakeBoldText(true);
 
 		mGestureDetector = new GestureDetector(
 		context, new GestureDetector.SimpleOnGestureListener() {
@@ -192,11 +193,11 @@ public class CandidatesView extends View {
 				mListSelectort.draw(canvas);
 				mSelected = i;
 			}
-
 			canvas.drawText(suggestion, x + mHorizontalPadding, y, paint);
-			paint.setColor(mColorLine);
-			canvas.drawLine(x + wordWidth, getPaddingTop(), x + wordWidth, height - getPaddingBottom(), paint);
-			paint.setFakeBoldText(false);
+			if (i < count -1) {
+				paint.setColor(mColorLine);
+				canvas.drawLine(x + wordWidth, getPaddingTop(), x + wordWidth, height - getPaddingBottom(), paint);
+			}
 			x += wordWidth;
 		}
 
