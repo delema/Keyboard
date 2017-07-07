@@ -77,11 +77,11 @@ public class CandidatesView extends View {
 		//mListSelectort = resources.getDrawable(android.R.drawable.list_selector_background);
         mListSelectort = getBackground();
 
-        setBackgroundColor(resources.getColor(R.color.candidate_background));
+        setBackgroundColor(resources.getColor(R.color.candidate_background, null));
 
-		mColorText = resources.getColor(R.color.candidate_text);
-		mColorRecommended = resources.getColor(R.color.candidate_recommended);
-		mColorLine = resources.getColor(R.color.candidate_line);
+		mColorText = resources.getColor(R.color.candidate_text, null);
+		mColorRecommended = resources.getColor(R.color.candidate_recommended, null);
+		mColorLine = resources.getColor(R.color.candidate_line, null);
 		mVerticalPadding = resources.getDimensionPixelSize(R.dimen.candidate_vertical_padding);
 		mHorizontalPadding = resources.getDimensionPixelSize(R.dimen.candidate_horizontal_padding);
 
